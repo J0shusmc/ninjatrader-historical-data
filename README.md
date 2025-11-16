@@ -7,16 +7,24 @@ A NinjaTrader 8 strategy that exports historical price data and EMA indicators t
 - **[ninjascripts/HistoricalData.cs](ninjascripts/HistoricalData.cs)** - NinjaTrader strategy for data export
 - **[data/HistoricalData.csv](data/HistoricalData.csv)** - Sample exported historical data
 
-## Quick Start
+## Installation & Setup
 
-1. Copy `HistoricalData.cs` to your NinjaTrader scripts folder:
-   ```
-   Documents\NinjaTrader 8\bin\Custom\Strategies\
-   ```
+### IMPORTANT: Strategy Name Requirement
+You **MUST** create a new strategy named **"HistoricalData"** in NinjaTrader. The strategy will not compile if you use any other name without making the necessary changes to the code.
 
-2. Compile in NinjaTrader (F5)
+### Steps:
 
-3. Apply strategy to any chart to export data
+1. In NinjaTrader 8, go to **Tools → New NinjaScript → Strategy**
+
+2. Name the strategy **exactly**: `HistoricalData`
+
+3. Click **OK** to create the strategy template
+
+4. Open the newly created strategy file and **replace all code** with the contents of `HistoricalData.cs` from this repository
+
+5. Compile the script (F5)
+
+6. Apply the strategy to any chart to begin exporting data
 
 ## Output Format
 
